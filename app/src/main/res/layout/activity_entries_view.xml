@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntriesView">
+
+    <include layout="@layout/content_delete_entry"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/entry_item_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_item_label"
+                    style="@style/entry_edit_item_label"/>
+
+                <TextView
+                    android:id="@+id/entry_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/entry_edit_item"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/entry_cost_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_cost_label"
+                    style="@style/entry_edit_cost_label"/>
+                <TextView
+                    android:id="@+id/entry_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/entry_edit_cost"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/entry_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_date_label"
+                    style="@style/entry_edit_date_label"/>
+                <TextView
+                    android:id="@+id/entry_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/entry_edit_date"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/entry_transaction_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_transaction_type_label"
+                    style="@style/entry_edit_transaction_type_label"/>
+                <TextView
+                    android:id="@+id/entry_transaction_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/entry_edit_transaction_type"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/entry_description_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_description_label"
+                    style="@style/entry_edit_description_label"/>
+                <TextView
+                    android:id="@+id/entry_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/entry_edit_description"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/entry_share_list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/entry_share_list_layout">
+
+                <TextView
+                    android:id="@+id/entry_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_sharing_with"
+                    style="@style/entry_edit_share"/>
+                <ListView
+                    android:id="@+id/entry_share_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    tools:ignore="NestedScrolling">
+                </ListView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/entry_edit_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_edit_btn_text"
+                        tools:ignore="ButtonStyle"
+                        style="@style/entry_edit_btn"/>
+                    <Button
+                        android:id="@+id/entry_delete_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_delete_btn_text"
+                        tools:ignore="ButtonStyle"
+                        style="@style/entry_delete_btn"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/entry_cancel_btn"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_cancel_text"
+                    style="@style/entry_cancel_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

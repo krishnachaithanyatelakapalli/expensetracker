@@ -1,0 +1,511 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textLarge">
+        <item name="android:textSize">@dimen/textLarge</item>
+    </style>
+
+    <style name="textBold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="create_layout">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:layout_marginStart">@dimen/create_margin_left</item>
+        <item name="android:layout_marginEnd">@dimen/create_margin_right</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="acc_edit_layout">
+        <item name="android:layout_marginStart">@dimen/acc_edit_margin_left</item>
+        <item name="android:layout_marginEnd">@dimen/acc_edit_margin_right</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <!-- Months View Styles -->
+    <style name="month_view">
+        <item name="android:layout_marginStart">@dimen/list_item_margin</item>
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:paddingEnd">@dimen/list_item_padding</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/month_view_textSize</item>
+    </style>
+
+    <style name="cost_view">
+        <item name="android:layout_marginStart">@dimen/list_item_margin</item>
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:paddingEnd">@dimen/list_item_padding</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/month_view_textSize</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="month_list_bg">
+        <item name="android:background">@drawable/month_list_background</item>
+    </style>
+
+    <style name="create_entry_layout">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginStart">@dimen/create_entry_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/create_entry_margin_end</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="month_cost_view">
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:textSize">@dimen/list_item_month_textSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <!-- List View Styles -->
+    <style name="list_top_view">
+        <item name="android:background">@drawable/list_top_view</item>
+    </style>
+
+    <style name="list_bottom_view">
+        <!--<item name="android:background">@drawable/month_list_bottom_view</item> -->
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="list_view_month_name">
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:textSize">@dimen/list_item_month_textSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="list_view_month_balance">
+        <item name="android:textSize">@dimen/list_item_month_textSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="list_view_month_total">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/list_item_month_textSize</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginStart">@dimen/list_item_month_total_margin_start</item>
+    </style>
+
+    <style name="list_view_month_total_cost">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/list_item_month_textSize</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">@dimen/list_item_month_margin_start</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="list_view_item" parent="textBold">
+        <item name="android:layout_marginStart">@dimen/list_item_margin</item>
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:paddingEnd">@dimen/list_item_padding</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/list_item_textSize</item>
+    </style>
+
+    <style name="list_view_date">
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:paddingEnd">@dimen/list_item_padding</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/list_item_textSize</item>
+    </style>
+
+    <style name="list_view_transactionType">
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:paddingEnd">@dimen/list_item_padding</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/list_item_textSize</item>
+    </style>
+
+    <style name="list_view_cost" parent="textBold">
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:paddingStart">@dimen/list_item_padding</item>
+        <item name="android:paddingEnd">@dimen/list_item_padding</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/list_item_textSize</item>
+    </style>
+
+    <!-- New Entry Styles -->
+    <style name="new_entry_edit_item">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:layout_marginStart">@dimen/edit_text_margin_start</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="new_entry_edit_cost">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:layout_marginStart">@dimen/edit_text_margin_start</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="new_entry_edit_description">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:layout_marginStart">@dimen/edit_description_margin_start</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="new_entry_edit_item_label">
+        <item name="android:layout_marginStart">@dimen/edit_text_label_margin_start</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="new_entry_edit_cost_label">
+        <item name="android:layout_marginStart">@dimen/edit_text_label_margin_start</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="new_entry_edit_description_label">
+        <item name="android:layout_marginStart">@dimen/edit_text_label_margin_start</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="new_entry_linear_view">
+        <item name="android:layout_marginTop">@dimen/linear_view_margin_top</item>
+    </style>
+
+    <style name="new_entry_button">
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginTop">@dimen/create_entry_btn_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/create_entry_btn_margin_start</item>
+    </style>
+
+    <style name="new_entry_transactionType">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginStart">@dimen/create_entry_transaction_type_margin_start</item>
+    </style>
+
+    <style name="new_entry_date">
+        <item name="android:layout_marginStart">@dimen/create_entry_date_margin_start</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="new_entry_sharing">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginStart">@dimen/create_entry_share_margin_start</item>
+    </style>
+
+    <style name="new_entry_share_add_button">
+        <item name="android:background">@drawable/new_entry_new_share</item>
+        <item name="android:layout_marginTop">@dimen/edit_share_add_btn_margin_top</item>
+    </style>
+
+    <style name="new_entry_share_name">
+        <item name="android:layout_marginTop">@dimen/edit_share_name_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/edit_share_name_margin_end</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="new_entry_share_cost">
+        <item name="android:layout_marginTop">@dimen/edit_share_cost_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/edit_share_cost_margin_end</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="new_entry_share_list">
+        <item name="android:layout_marginStart">@dimen/create_entry_share_list_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/create_entry_share_list_margin_top</item>
+    </style>
+
+    <!-- New Year Styles -->
+    <style name="new_year_create">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="new_year_cancel">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="empty_list">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#777</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- entry view styles -->
+    <style name="entry_edit_item_label">
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_cost_label">
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_description_label">
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_date_label">
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_transaction_type_label">
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_transaction_type">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_description">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_date">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_cost">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_item">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_edit_share">
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="entry_share_list_layout">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:layout_marginEnd">45dp</item>
+    </style>
+
+    <style name="entry_edit_btn">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="entry_delete_btn">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="entry_cancel_btn">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!-- Foreground Styles -->
+    <style name="shade_view">
+        <item name="android:background">@drawable/view_bckgrnd</item>
+    </style>
+
+    <style name="prompt_view">
+        <item name="android:background">@drawable/prompt_bkgrnd</item>
+    </style>
+
+    <!-- Delete View Styles -->
+    <style name="entry_delete_message">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="entry_delete_cancel_btn">
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_bg</item>
+    </style>
+
+    <style name="entry_delete_delete_btn">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_bg</item>
+    </style>
+
+    <!-- Share List Entries Styles -->
+    <style name="share_entry_name">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="share_entry_cost">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="entry_share_edit_cancel_btn">
+        <item name="android:layout_marginEnd">@dimen/edit_share_edit_btn_margin_end</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_marginTop">@dimen/edit_share_edit_btn_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/edit_share_edit_btn_margin_start</item>
+    </style>
+
+    <style name="entry_share_edit_save_btn">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_marginTop">@dimen/edit_share_edit_btn_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/edit_share_edit_btn_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/edit_share_edit_btn_margin_end</item>
+    </style>
+
+    <style name="entry_share_edit_delete_btn">
+        <item name="android:layout_marginEnd">@dimen/edit_share_edit_btn_margin_end</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_marginTop">@dimen/edit_share_edit_btn_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/edit_share_edit_btn_margin_start</item>
+    </style>
+
+    <style name="entry_share_edit_name">
+        <item name="android:layout_marginTop">@dimen/edit_share_name_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/edit_share_name_margin_end</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="entry_share_edit_price">
+        <item name="android:layout_marginTop">@dimen/edit_share_name_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/edit_share_name_margin_end</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_marginStart">@dimen/edit_share_edit_btn_margin_start</item>
+    </style>
+</resources>

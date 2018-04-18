@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonthView">
+
+    <include layout="@layout/context_add_new_entry" />
+    <include layout="@layout/context_share_entry_edit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/list_top_view">
+            <TextView
+                android:id="@+id/month_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/list_view_month_name"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/month_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/create_entry"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="@style/create_entry_layout"
+            android:text="@string/add_new_entry"/>
+
+        <include layout="@layout/content_month_view"/>
+    </LinearLayout>
+</RelativeLayout>

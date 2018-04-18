@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/entry_share_edit_layout"
+    tools:context=".MonthView"
+    tools:showIn="@layout/activity_month_view"
+    style="@style/shade_view">
+
+    <RelativeLayout
+        style="@style/prompt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/entry_share_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                style="@style/entry_share_edit_name"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/entry_share_edit_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                style="@style/entry_share_edit_price"
+                tools:ignore="LabelFor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/entry_share_edit_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/entry_save_text"
+                        style="@style/entry_share_edit_save_btn"/>
+
+                    <Button
+                        android:id="@+id/entry_share_edit_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/entry_delete_btn_text"
+                        style="@style/entry_share_edit_delete_btn"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/entry_share_edit_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/entry_cancel_text"
+                    style="@style/entry_share_edit_cancel_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

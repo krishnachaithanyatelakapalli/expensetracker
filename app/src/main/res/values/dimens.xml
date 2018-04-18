@@ -1,0 +1,63 @@
+<resources>
+    <!-- general -->
+    <dimen name="textLarge">20dp</dimen>
+
+    <!-- action toolbar -->
+
+    <dimen name="account_spinner_width">160dp</dimen>
+
+    <!-- month view dimen -->
+    <dimen name="month_view_textSize">18dp</dimen>
+    <dimen name="create_entry_margin_end">5dp</dimen>
+
+    <!-- list item dimen -->
+    <dimen name="list_item_padding">5dp</dimen>
+    <dimen name="list_item_textSize">15dp</dimen>
+    <dimen name="list_item_month_textSize">20dp</dimen>
+
+    <!-- Margin dimen -->
+
+    <!-- Edit Text -->
+    <dimen name="edit_text_label_margin_start">12dp</dimen>
+    <dimen name="edit_text_margin_start">10dp</dimen>
+    <dimen name="edit_description_margin_start">15dp</dimen>
+    <dimen name="edit_share_name_margin_top">5dp</dimen>
+    <dimen name="edit_share_name_margin_end">5dp</dimen>
+    <dimen name="edit_share_cost_margin_top">5dp</dimen>
+    <dimen name="edit_share_cost_margin_end">5dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="edit_share_add_btn_margin_top">5dp</dimen>
+    <dimen name="edit_share_edit_btn_margin_top">5dp</dimen>
+    <dimen name="edit_share_edit_btn_margin_start">5dp</dimen>
+    <dimen name="edit_share_edit_btn_margin_end">5dp</dimen>
+
+    <!-- List Item -->
+    <dimen name="list_item_month_margin_start">300dp</dimen>
+    <dimen name="list_item_month_total_margin_start">250dp</dimen>
+    <dimen name="list_item_margin">5dp</dimen>
+
+    <!-- View -->
+    <dimen name="linear_view_margin_top">20dp</dimen>
+
+    <!-- Create Entry -->
+    <dimen name="create_entry_margin_start">60dp</dimen>
+    <dimen name="create_margin_left">80dp</dimen>
+    <dimen name="create_margin_right">5dp</dimen>
+    <dimen name="create_entry_date_margin_start">20dp</dimen>
+    <dimen name="create_entry_transaction_type_margin_start">60dp</dimen>
+    <dimen name="create_entry_share_margin_start">0dp</dimen>
+    <dimen name="create_entry_share_list_margin_start">15dp</dimen>
+    <dimen name="create_entry_share_list_margin_top">5dp</dimen>
+    <dimen name="create_entry_btn_margin_top">10dp</dimen>
+    <dimen name="create_entry_btn_margin_start">15dp</dimen>
+
+    <!-- Share List -->
+
+
+    <!-- Text -->
+
+    <!-- Account -->
+    <dimen name="acc_edit_margin_left">5dp</dimen>
+    <dimen name="acc_edit_margin_right">5dp</dimen>
+</resources>

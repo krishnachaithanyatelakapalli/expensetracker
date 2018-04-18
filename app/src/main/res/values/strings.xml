@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Expenditure Manager</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- Account String Constants -->
+    <string name="account_edit">Edit</string>
+    <string name="create">Create</string>
+
+    <!-- Dummy Text -->
+    <string name="dummy_item">Amazon Purchase</string>
+    <string name="dummy_date">Wed, April 11</string>
+    <string name="dummy_transactionType">Dr</string>
+    <string name="dummy_cost">$ 15.98</string>
+    <string name="dummy_month_total_cost">$ 500</string>
+    <string name="dummy_year_text">2018</string>
+
+    <!-- Month Text -->
+    <string name="jan">January</string>
+    <string name="feb">February</string>
+    <string name="mar">March</string>
+    <string name="apr">April</string>
+    <string name="may">May</string>
+    <string name="jun">June</string>
+    <string name="jul">July</string>
+    <string name="aug">August</string>
+    <string name="sept">September</string>
+    <string name="oct">October</string>
+    <string name="nov">November</string>
+    <string name="dec">December</string>
+    <string name="month_total">Total: </string>
+
+    <!-- New Entry Text -->
+    <string name="entry_item_label">Item: </string>
+    <string name="entry_cost_label">Cost: </string>
+    <string name="entry_transactionType_dr">Dr</string>
+    <string name="entry_transactionType_cr">Cr</string>
+    <string name="entry_save_text">Save</string>
+    <string name="entry_cancel_text">Cancel</string>
+    <string name="add_new_entry">Add New</string>
+    <string name="entry_description_label">Description: </string>
+    <string name="entry_not_sharing">Not Sharing</string>
+    <string name="entry_sharing_with">Sharing with</string>
+    <string name="entry_share_name">Name</string>
+    <string name="entry_share_cost">Cost</string>
+    <string name="entry_date_label">Date: </string>
+    <string name="entry_transaction_type_label">Transaction Type: </string>
+    <string name="entry_edit_btn_text">Edit</string>
+    <string name="entry_delete_btn_text">Delete</string>
+
+    <!-- Delete View Text -->
+    <string name="entry_delete_message">Delete this entry</string>
+
+    <!-- New Year Text -->
+    <string name="new_year_create">Create</string>
+    <string name="new_year_cancel">Cancel</string>
+
+    <string name="emtpy_list">Empty List</string>
+
+    <!-- Spinner Data -->
+    <string-array name="account_spinner">
+        <item>Checking</item>
+        <item>Saving</item>
+        <item>Credit Card</item>
+    </string-array>
+</resources>

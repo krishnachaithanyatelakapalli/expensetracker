@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit_entry"
+    style="@style/shade_view"
+    tools:context=".EntriesView"
+    tools:showIn="@layout/activity_entries_view">
+
+    <RelativeLayout
+        style="@style/prompt_view"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/new_entry_linear_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/edit_entry_item_label"
+                        style="@style/new_entry_edit_item_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_item_label" />
+
+                    <EditText
+                        android:id="@+id/edit_entry_item"
+                        style="@style/new_entry_edit_item"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        tools:ignore="LabelFor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/new_entry_linear_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/edit_entry_cost_label"
+                        style="@style/new_entry_edit_cost_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_cost_label" />
+
+                    <EditText
+                        android:id="@+id/edit_entry_cost"
+                        style="@style/new_entry_edit_cost"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:labelFor="@+id/newEntry_cost_label"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+                <DatePicker
+                    android:id="@+id/edit_entry_date"
+                    style="@style/new_entry_date"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner">
+
+                </DatePicker>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/new_entry_linear_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/edit_entry_transactionType_dr"
+                        style="@style/new_entry_transactionType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_transactionType_dr" />
+
+                    <RadioButton
+                        android:id="@+id/edit_entry_transactionType_cr"
+                        style="@style/new_entry_transactionType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_transactionType_cr" />
+                </RadioGroup>
+
+                <LinearLayout
+                    style="@style/new_entry_linear_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/edit_entry_description_label"
+                        style="@style/new_entry_edit_description_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_description_label" />
+
+                    <EditText
+                        android:id="@+id/edit_entry_description"
+                        style="@style/new_entry_edit_description"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:inputType="textLongMessage"
+                        tools:ignore="LabelFor" />
+                </LinearLayout>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/new_entry_linear_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/edit_entry_not_sharing"
+                        style="@style/new_entry_sharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_not_sharing" />
+
+                    <RadioButton
+                        android:id="@+id/edit_entry_sharing_with"
+                        style="@style/new_entry_sharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_sharing_with" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/edit_entry_share_view"
+                    style="@style/new_entry_share_list"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edit_entry_share_name"
+                            style="@style/new_entry_share_name"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:hint="@string/entry_share_name"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/edit_entry_share_cost"
+                            style="@style/new_entry_share_cost"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:hint="@string/entry_share_cost"
+                            android:inputType="numberDecimal" />
+
+                        <ImageButton
+                            android:id="@+id/edit_entry_new_share"
+                            style="@style/new_entry_share_add_button"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_plus_sign"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/edit_entry_share_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="NestedScrolling">
+
+                    </ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/new_entry_linear_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/edit_entry_cancel_btn"
+                        style="@style/new_entry_button"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_cancel_text"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/edit_entry_save_btn"
+                        style="@style/new_entry_button"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entry_save_text"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

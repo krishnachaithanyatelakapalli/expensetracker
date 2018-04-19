@@ -21,10 +21,11 @@
     <dimen name="edit_text_label_margin_start">12dp</dimen>
     <dimen name="edit_text_margin_start">10dp</dimen>
     <dimen name="edit_description_margin_start">15dp</dimen>
-    <dimen name="edit_share_name_margin_top">5dp</dimen>
+    <dimen name="edit_share_name_margin_top">10dp</dimen>
     <dimen name="edit_share_name_margin_end">5dp</dimen>
-    <dimen name="edit_share_cost_margin_top">5dp</dimen>
+    <dimen name="edit_share_cost_margin_top">10dp</dimen>
     <dimen name="edit_share_cost_margin_end">5dp</dimen>
+    <dimen name="edit_share_cost_margin_bottom">5dp</dimen>
 
     <!-- Buttons -->
     <dimen name="edit_share_add_btn_margin_top">5dp</dimen>

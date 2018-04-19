@@ -30,7 +30,7 @@
 
             <EditText
                 android:id="@+id/entry_share_edit_name"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 style="@style/entry_share_edit_name"
@@ -38,7 +38,7 @@
 
             <EditText
                 android:id="@+id/entry_share_edit_cost"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 style="@style/entry_share_edit_price"
